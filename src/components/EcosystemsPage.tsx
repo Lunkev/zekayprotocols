@@ -10,12 +10,26 @@ interface EcosystemsPageProps {
 
 export default function EcosystemsPage({ onNavigate: _onNavigate }: EcosystemsPageProps) {
   const [rotation, setRotation] = useState(0);
+  const [translateY, setTranslateY] = useState(-180);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setRotation((prev) => prev + 0.5);
     }, 50);
     return () => clearInterval(interval);
+  }, []);
+
+  // Update translateY based on screen size
+  useEffect(() => {
+    const updateTranslateY = () => {
+      if (typeof window !== 'undefined') {
+        setTranslateY(window.innerWidth >= 768 ? -180 : -100);
+      }
+    };
+
+    updateTranslateY();
+    window.addEventListener('resize', updateTranslateY);
+    return () => window.removeEventListener('resize', updateTranslateY);
   }, []);
 
   return (
@@ -63,7 +77,7 @@ export default function EcosystemsPage({ onNavigate: _onNavigate }: EcosystemsPa
                    style={{
                      top: '50%',
                      left: '50%',
-                     transform: `translate(-50%, -50%) rotate(${rotation}deg) translateY(-100px) md:translateY(-180px) rotate(-${rotation}deg)`,
+                     transform: `translate(-50%, -50%) rotate(${rotation}deg) translateY(${translateY}px) rotate(-${rotation}deg)`,
                      boxShadow: '0 0 20px rgba(147, 51, 234, 0.2)',
                    }}
                  >
@@ -76,7 +90,7 @@ export default function EcosystemsPage({ onNavigate: _onNavigate }: EcosystemsPa
                    style={{
                      top: '50%',
                      left: '50%',
-                     transform: `translate(-50%, -50%) rotate(${rotation + 120}deg) translateY(-100px) md:translateY(-180px) rotate(-${rotation + 120}deg)`,
+                     transform: `translate(-50%, -50%) rotate(${rotation + 120}deg) translateY(${translateY}px) rotate(-${rotation + 120}deg)`,
                      boxShadow: '0 0 20px rgba(59, 130, 246, 0.2)',
                    }}
                  >
@@ -89,7 +103,7 @@ export default function EcosystemsPage({ onNavigate: _onNavigate }: EcosystemsPa
                    style={{
                      top: '50%',
                      left: '50%',
-                     transform: `translate(-50%, -50%) rotate(${rotation + 240}deg) translateY(-100px) md:translateY(-180px) rotate(-${rotation + 240}deg)`,
+                     transform: `translate(-50%, -50%) rotate(${rotation + 240}deg) translateY(${translateY}px) rotate(-${rotation + 240}deg)`,
                      boxShadow: '0 0 20px rgba(139, 92, 246, 0.2)',
                    }}
                  >
