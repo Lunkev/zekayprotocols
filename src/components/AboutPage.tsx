@@ -5,173 +5,173 @@ interface AboutPageProps {
 export default function AboutPage({ onNavigate: _onNavigate }: AboutPageProps) {
   return (
     <div className="absolute inset-0 overflow-y-auto pointer-events-auto" style={{ overscrollBehavior: 'contain' }}>
-      <div className="max-w-5xl mx-auto px-8 py-20 relative z-10">
+      <div className="max-w-5xl mx-auto px-4 md:px-8 py-12 md:py-20 relative z-10">
         {/* Hero Section */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-20">
           <h1 
-            className="text-6xl font-light italic text-white mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-light italic text-white mb-4 md:mb-6 px-4"
             style={{ fontFamily: '"GFS Didot", serif' }}
           >
             About Zekay Protocol
         </h1>
-          <p className="text-xl text-white/80 font-light leading-relaxed max-w-4xl mx-auto">
+          <p className="text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-4xl mx-auto px-4">
             Zekay Protocol is a privacy-first reputation infrastructure enabling trust in decentralized systems — without requiring users to reveal their identity.
           </p>
         </div>
 
         {/* Main Content Sections */}
-        <div className="space-y-16">
+        <div className="space-y-12 md:space-y-16">
           {/* Belief Statement */}
-          <section className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-            <p className="text-lg text-white/90 font-light leading-relaxed">
+          <section className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
+            <p className="text-base md:text-lg text-white/90 font-light leading-relaxed">
               We believe the future of trust must be <span className="text-white font-medium">anonymous</span>, <span className="text-white font-medium">verifiable</span>, and <span className="text-white font-medium">composable</span>. In a world where data breaches, censorship, and digital profiling are increasingly common, Zekay offers an alternative: a cryptographic foundation for identity and reputation that protects users by design.
             </p>
           </section>
 
           {/* Description */}
           <section>
-            <p className="text-lg text-white/80 font-light leading-relaxed">
+            <p className="text-base md:text-lg text-white/80 font-light leading-relaxed">
               By combining zero-knowledge proofs with modular smart contracts, Zekay allows applications to issue, verify, and consume user reputation — without ever storing personal data. Whether it's a lending platform verifying borrower reliability, a DAO gating access based on contribution history, or a network of communities sharing trust signals across ecosystems, Zekay provides the infrastructure for verifiable interactions between pseudonymous actors.
             </p>
           </section>
 
           {/* Why It Matters */}
-          <section className="border-t border-white/10 pt-16">
-            <h2 className="text-4xl font-light text-white mb-8 flex items-center gap-3">
-              <i className="ri-lightbulb-line text-3xl"></i>
+          <section className="border-t border-white/10 pt-12 md:pt-16">
+            <h2 className="text-3xl md:text-4xl font-light text-white mb-6 md:mb-8 flex items-center gap-3">
+              <i className="ri-lightbulb-line text-2xl md:text-3xl"></i>
               Why It Matters
             </h2>
-            <p className="text-lg text-white/80 font-light leading-relaxed mb-8">
+            <p className="text-base md:text-lg text-white/80 font-light leading-relaxed mb-6 md:mb-8">
               Today's digital trust systems rely on fragile assumptions: identity linked to KYC, reputation tied to wallets, and user behavior indexed by opaque platforms. This leads to privacy loss, manipulation, and silos that limit innovation.
             </p>
-            <p className="text-lg text-white/90 font-light mb-6">
+            <p className="text-base md:text-lg text-white/90 font-light mb-4 md:mb-6">
               Zekay removes these constraints. Our protocol enables:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 md:p-6 hover:bg-white/10 transition-all">
                 <div className="flex items-start gap-3">
-                  <i className="ri-shield-check-line text-2xl text-white mt-1"></i>
+                  <i className="ri-shield-check-line text-xl md:text-2xl text-white mt-1"></i>
                   <div>
                     <h3 className="text-white font-medium mb-2">Anonymous identity with cryptographic uniqueness</h3>
                   </div>
                 </div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 md:p-6 hover:bg-white/10 transition-all">
                 <div className="flex items-start gap-3">
-                  <i className="ri-verified-badge-line text-2xl text-white mt-1"></i>
+                  <i className="ri-verified-badge-line text-xl md:text-2xl text-white mt-1"></i>
                   <div>
-                    <h3 className="text-white font-medium mb-2">Verifiable reputation without exposing history</h3>
+                    <h3 className="text-white font-medium mb-2 text-sm md:text-base">Verifiable reputation without exposing history</h3>
                   </div>
                 </div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 md:p-6 hover:bg-white/10 transition-all">
                 <div className="flex items-start gap-3">
-                  <i className="ri-links-line text-2xl text-white mt-1"></i>
+                  <i className="ri-links-line text-xl md:text-2xl text-white mt-1"></i>
                   <div>
-                    <h3 className="text-white font-medium mb-2">Cross-platform interoperability of trust signals</h3>
+                    <h3 className="text-white font-medium mb-2 text-sm md:text-base">Cross-platform interoperability of trust signals</h3>
                   </div>
                 </div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 md:p-6 hover:bg-white/10 transition-all">
                 <div className="flex items-start gap-3">
-                  <i className="ri-file-shield-line text-2xl text-white mt-1"></i>
+                  <i className="ri-file-shield-line text-xl md:text-2xl text-white mt-1"></i>
                   <div>
                     <h3 className="text-white font-medium mb-2">Compliant, zero-knowledge proofs of eligibility and behavior</h3>
                   </div>
                 </div>
               </div>
             </div>
-            <p className="text-lg text-white/90 font-light mt-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+            <p className="text-base md:text-lg text-white/90 font-light mt-6 md:mt-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 md:p-6">
               <span className="text-white font-medium">The result:</span> applications can enforce trust-based access, scoring, or ranking — without ever knowing who the user is.
             </p>
           </section>
 
           {/* What We're Building */}
-          <section className="border-t border-white/10 pt-16">
-            <h2 className="text-4xl font-light text-white mb-8 flex items-center gap-3">
-              <i className="ri-hammer-line text-3xl"></i>
+          <section className="border-t border-white/10 pt-12 md:pt-16">
+            <h2 className="text-3xl md:text-4xl font-light text-white mb-6 md:mb-8 flex items-center gap-3">
+              <i className="ri-hammer-line text-2xl md:text-3xl"></i>
               What We're Building
             </h2>
-            <p className="text-lg text-white/80 font-light leading-relaxed mb-8">
+            <p className="text-base md:text-lg text-white/80 font-light leading-relaxed mb-6 md:mb-8">
               Zekay Protocol consists of:
             </p>
             <div className="space-y-4">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-white/20 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="bg-white/10 rounded-lg p-3">
-                    <i className="ri-file-shield-2-line text-2xl text-white"></i>
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 md:p-6 hover:border-white/20 transition-all">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="bg-white/10 rounded-lg p-2 md:p-3">
+                    <i className="ri-file-shield-2-line text-xl md:text-2xl text-white"></i>
                   </div>
                   <div>
-                    <h3 className="text-white font-medium text-lg mb-2">Privacy-Preserving Smart Contract Layer</h3>
-                    <p className="text-white/70 font-light">For identity and reputation management</p>
+                    <h3 className="text-white font-medium text-base md:text-lg mb-2">Privacy-Preserving Smart Contract Layer</h3>
+                    <p className="text-white/70 font-light text-sm md:text-base">For identity and reputation management</p>
                   </div>
                 </div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-white/20 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="bg-white/10 rounded-lg p-3">
-                    <i className="ri-file-list-3-line text-2xl text-white"></i>
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 md:p-6 hover:border-white/20 transition-all">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="bg-white/10 rounded-lg p-2 md:p-3">
+                    <i className="ri-file-list-3-line text-xl md:text-2xl text-white"></i>
                   </div>
                   <div>
-                    <h3 className="text-white font-medium text-lg mb-2">Modular Attestation Framework</h3>
-                    <p className="text-white/70 font-light">For defining how reputation is issued</p>
+                    <h3 className="text-white font-medium text-base md:text-lg mb-2">Modular Attestation Framework</h3>
+                    <p className="text-white/70 font-light text-sm md:text-base">For defining how reputation is issued</p>
                   </div>
                 </div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-white/20 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="bg-white/10 rounded-lg p-3">
-                    <i className="ri-user-settings-line text-2xl text-white"></i>
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 md:p-6 hover:border-white/20 transition-all">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="bg-white/10 rounded-lg p-2 md:p-3">
+                    <i className="ri-user-settings-line text-xl md:text-2xl text-white"></i>
                   </div>
                   <div>
-                    <h3 className="text-white font-medium text-lg mb-2">Provable User State System</h3>
-                    <p className="text-white/70 font-light">Using zero-knowledge proofs</p>
+                    <h3 className="text-white font-medium text-base md:text-lg mb-2">Provable User State System</h3>
+                    <p className="text-white/70 font-light text-sm md:text-base">Using zero-knowledge proofs</p>
                   </div>
                 </div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-white/20 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="bg-white/10 rounded-lg p-3">
-                    <i className="ri-code-s-slash-line text-2xl text-white"></i>
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 md:p-6 hover:border-white/20 transition-all">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="bg-white/10 rounded-lg p-2 md:p-3">
+                    <i className="ri-code-s-slash-line text-xl md:text-2xl text-white"></i>
                   </div>
                   <div>
-                    <h3 className="text-white font-medium text-lg mb-2">Open APIs and Developer Tools</h3>
-                    <p className="text-white/70 font-light">To integrate with any dApp or system</p>
+                    <h3 className="text-white font-medium text-base md:text-lg mb-2">Open APIs and Developer Tools</h3>
+                    <p className="text-white/70 font-light text-sm md:text-base">To integrate with any dApp or system</p>
                   </div>
                 </div>
               </div>
             </div>
-            <p className="text-lg text-white/80 font-light leading-relaxed mt-8">
+            <p className="text-base md:text-lg text-white/80 font-light leading-relaxed mt-6 md:mt-8">
               Our architecture is optimized for extensibility, gas efficiency, and cross-chain compatibility. Developers can define custom reputation models, build portable identities, or layer anonymous credentials into existing flows — all under a shared cryptographic standard.
             </p>
           </section>
 
           {/* Our Vision */}
-          <section className="border-t border-white/10 pt-16">
-            <h2 className="text-4xl font-light text-white mb-8 flex items-center gap-3">
-              <i className="ri-eye-line text-3xl"></i>
+          <section className="border-t border-white/10 pt-12 md:pt-16">
+            <h2 className="text-3xl md:text-4xl font-light text-white mb-6 md:mb-8 flex items-center gap-3">
+              <i className="ri-eye-line text-2xl md:text-3xl"></i>
               Our Vision
             </h2>
-            <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-8">
-              <p className="text-xl text-white/90 font-light leading-relaxed mb-6">
+            <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-6 md:p-8">
+              <p className="text-lg md:text-xl text-white/90 font-light leading-relaxed mb-4 md:mb-6">
                 We envision a digital world where users own their reputation, applications respect privacy by default, and composable trust flows across protocols.
               </p>
-              <p className="text-lg text-white/80 font-light leading-relaxed mb-6">
+              <p className="text-base md:text-lg text-white/80 font-light leading-relaxed mb-4 md:mb-6">
                 Zekay is not just a system — it's a foundation for a new class of applications where trust is established without exposure.
               </p>
-              <p className="text-lg text-white/80 font-light leading-relaxed">
+              <p className="text-base md:text-lg text-white/80 font-light leading-relaxed">
                 We are building for the builders of privacy-respecting infrastructure, reputation-based coordination, anonymous finance, and next-generation digital governance.
               </p>
             </div>
           </section>
 
           {/* Use Cases */}
-          <section className="border-t border-white/10 pt-16 pb-8">
-            <h2 className="text-4xl font-light text-white mb-6 flex items-center gap-3">
-              <i className="ri-apps-line text-3xl"></i>
+          <section className="border-t border-white/10 pt-12 md:pt-16 pb-8">
+            <h2 className="text-3xl md:text-4xl font-light text-white mb-6 flex items-center gap-3">
+              <i className="ri-apps-line text-2xl md:text-3xl"></i>
               Use Cases
             </h2>
-            <p className="text-lg text-white/80 font-light leading-relaxed mb-12">
+            <p className="text-base md:text-lg text-white/80 font-light leading-relaxed mb-8 md:mb-12">
               Zekay Protocol enables a new class of applications that require trust, verification, and accountability — without identity exposure. By combining zero-knowledge cryptography with modular smart contracts, developers can build systems where reputation is private yet provable.
             </p>
 

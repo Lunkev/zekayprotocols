@@ -76,28 +76,28 @@ export default function DocsPage({ onNavigate: _onNavigate }: DocsPageProps) {
   }, [activeSection]);
 
   return (
-    <div className="absolute inset-0 flex pointer-events-auto z-10">
+    <div className="absolute inset-0 flex flex-col md:flex-row pointer-events-auto z-10">
       {/* Sidebar */}
-      <div className="w-80 bg-white/5 backdrop-blur-sm border-r border-white/10 overflow-y-auto flex-shrink-0 pointer-events-auto" style={{ overscrollBehavior: 'contain' }}>
-        <div className="p-6 border-b border-white/10 mt-24">
-          <h2 className="text-white text-xl font-light italic">Zekay Protocol</h2>
-          <p className="text-white/60 text-sm mt-1">Documentation</p>
+      <div className="w-full md:w-80 bg-white/5 backdrop-blur-sm md:border-r border-white/10 overflow-y-auto flex-shrink-0 pointer-events-auto border-b md:border-b-0" style={{ overscrollBehavior: 'contain' }}>
+        <div className="p-4 md:p-6 border-b border-white/10 mt-16 md:mt-24">
+          <h2 className="text-white text-lg md:text-xl font-light italic">Zekay Protocol</h2>
+          <p className="text-white/60 text-xs md:text-sm mt-1">Documentation</p>
           </div>
 
-        <nav className="p-4">
+        <nav className="p-2 md:p-4">
           {sections.map((section) => (
             <button
               key={section.id}
               data-section={section.id}
               onClick={() => handleSectionChange(section.id)}
-              className={`w-full text-left px-4 py-3 rounded-lg mb-1 transition-all flex items-center gap-3 cursor-pointer ${
+              className={`w-full text-left px-3 md:px-4 py-2 md:py-3 rounded-lg mb-1 transition-all flex items-center gap-2 md:gap-3 cursor-pointer text-xs md:text-sm ${
                 activeSection === section.id
                   ? 'bg-white/10 text-white border-l-2 border-white'
                   : 'text-white/60 hover:text-white hover:bg-white/5'
               }`}
             >
-              <i className={`${section.icon} text-lg`}></i>
-              <span className="text-sm font-light">{section.title}</span>
+              <i className={`${section.icon} text-base md:text-lg`}></i>
+              <span className="font-light">{section.title}</span>
             </button>
           ))}
         </nav>
@@ -106,7 +106,7 @@ export default function DocsPage({ onNavigate: _onNavigate }: DocsPageProps) {
       {/* Main Content */}
       <div ref={contentRef} className="flex-1 overflow-y-auto pointer-events-auto" style={{ overscrollBehavior: 'contain' }}>
         <div 
-          className={`max-w-4xl mx-auto px-12 py-12 pt-32 transition-opacity duration-200 ${
+          className={`max-w-4xl mx-auto px-4 md:px-12 py-8 md:py-12 pt-8 md:pt-32 transition-opacity duration-200 ${
             isTransitioning ? 'opacity-0' : 'opacity-100'
           }`}
         >

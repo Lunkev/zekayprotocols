@@ -20,38 +20,38 @@ export default function EcosystemsPage({ onNavigate: _onNavigate }: EcosystemsPa
 
   return (
     <div className="absolute inset-0 overflow-y-auto pointer-events-auto" style={{ overscrollBehavior: 'contain' }}>
-      <div className="max-w-5xl mx-auto px-8 py-20 relative z-10">
+      <div className="max-w-5xl mx-auto px-4 md:px-8 py-12 md:py-20 relative z-10">
         {/* Hero Section */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-20">
           <h1 
-            className="text-6xl font-light italic text-white mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-light italic text-white mb-4 md:mb-6 px-4"
             style={{ fontFamily: '"GFS Didot", serif' }}
           >
             Ecosystem & Integrations
           </h1>
-          <p className="text-xl text-white/80 font-light leading-relaxed max-w-4xl mx-auto mb-4">
+          <p className="text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-4xl mx-auto mb-3 md:mb-4 px-4">
             Zekay connects identity, reputation, and verification across protocols, institutions, and enterprise systems.
           </p>
-          <p className="text-lg text-white/60 font-light leading-relaxed max-w-4xl mx-auto">
+          <p className="text-base md:text-lg text-white/60 font-light leading-relaxed max-w-4xl mx-auto px-4">
             Built for interoperability, designed for scale.
           </p>
         </div>
 
         {/* Main Content Sections */}
-        <div className="space-y-20">
+        <div className="space-y-12 md:space-y-20">
           {/* SECTION 2 – INTEGRATION NETWORK (PARTNER CAROUSEL) */}
-          <section className="border-t border-white/10 pt-16">
+          <section className="border-t border-white/10 pt-12 md:pt-16">
             <h2 
-              className="text-3xl font-light text-white mb-8 text-center"
+              className="text-2xl md:text-3xl font-light text-white mb-6 md:mb-8 text-center px-4"
               style={{ fontFamily: '"GFS Didot", serif' }}
             >
               Integration Network
             </h2>
             
             {/* Partner Carousel */}
-            <div className="relative flex items-center justify-center my-16 h-96">
+            <div className="relative flex items-center justify-center my-12 md:my-16 h-64 md:h-96">
               {/* Center Zekay Logo */}
-              <div className="absolute z-10 flex items-center justify-center w-32 h-32 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full p-4 overflow-hidden">
+              <div className="absolute z-10 flex items-center justify-center w-24 h-24 md:w-32 md:h-32 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full p-3 md:p-4 overflow-hidden">
                 <img src={ZekayImg} alt="Zekay" className="w-full h-full object-cover rounded-full" />
               </div>
 
@@ -59,11 +59,11 @@ export default function EcosystemsPage({ onNavigate: _onNavigate }: EcosystemsPa
                <div className="absolute inset-0">
                  {/* Partner 1 - Privado ID */}
                  <div
-                   className="absolute w-24 h-24 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl flex items-center justify-center p-2"
+                   className="absolute w-20 h-20 md:w-24 md:h-24 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl flex items-center justify-center p-2"
                    style={{
                      top: '50%',
                      left: '50%',
-                     transform: `translate(-50%, -50%) rotate(${rotation}deg) translateY(-180px) rotate(-${rotation}deg)`,
+                     transform: `translate(-50%, -50%) rotate(${rotation}deg) translateY(-100px) md:translateY(-180px) rotate(-${rotation}deg)`,
                      boxShadow: '0 0 20px rgba(147, 51, 234, 0.2)',
                    }}
                  >
@@ -72,11 +72,11 @@ export default function EcosystemsPage({ onNavigate: _onNavigate }: EcosystemsPa
 
                  {/* Partner 2 - Quark ID */}
                  <div
-                   className="absolute w-24 h-24 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl flex items-center justify-center p-2"
+                   className="absolute w-20 h-20 md:w-24 md:h-24 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl flex items-center justify-center p-2"
                    style={{
                      top: '50%',
                      left: '50%',
-                     transform: `translate(-50%, -50%) rotate(${rotation + 120}deg) translateY(-180px) rotate(-${rotation + 120}deg)`,
+                     transform: `translate(-50%, -50%) rotate(${rotation + 120}deg) translateY(-100px) md:translateY(-180px) rotate(-${rotation + 120}deg)`,
                      boxShadow: '0 0 20px rgba(59, 130, 246, 0.2)',
                    }}
                  >
@@ -85,11 +85,11 @@ export default function EcosystemsPage({ onNavigate: _onNavigate }: EcosystemsPa
 
                  {/* Partner 3 - Verifik */}
                  <div
-                   className="absolute w-24 h-24 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl flex items-center justify-center p-2"
+                   className="absolute w-20 h-20 md:w-24 md:h-24 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl flex items-center justify-center p-2"
                    style={{
                      top: '50%',
                      left: '50%',
-                     transform: `translate(-50%, -50%) rotate(${rotation + 240}deg) translateY(-180px) rotate(-${rotation + 240}deg)`,
+                     transform: `translate(-50%, -50%) rotate(${rotation + 240}deg) translateY(-100px) md:translateY(-180px) rotate(-${rotation + 240}deg)`,
                      boxShadow: '0 0 20px rgba(139, 92, 246, 0.2)',
                    }}
                  >
@@ -98,19 +98,19 @@ export default function EcosystemsPage({ onNavigate: _onNavigate }: EcosystemsPa
                </div>
             </div>
 
-            <p className="text-lg text-white/80 font-light leading-relaxed mb-6 max-w-3xl mx-auto text-center">
+            <p className="text-base md:text-lg text-white/80 font-light leading-relaxed mb-4 md:mb-6 max-w-3xl mx-auto text-center px-4">
               Zekay sits at the center of a growing ecosystem of identity, verification, and infrastructure providers.
               By integrating Zekay's proof layer, partners gain privacy-preserving identity, reputation, and eligibility checks that can be verified across ecosystems without exposing user data.
             </p>
-            <p className="text-sm text-white/60 font-light text-center">
+            <p className="text-xs md:text-sm text-white/60 font-light text-center px-4">
               Early integrations include digital identity, biometric verification, and government-backed identity initiatives.
             </p>
           </section>
 
           {/* SECTION 3 – ACTIVE INTEGRATIONS (CARDS GRID) */}
-          <section className="border-t border-white/10 pt-16">
+          <section className="border-t border-white/10 pt-12 md:pt-16">
             <h2 
-              className="text-3xl font-light text-white mb-12 text-center"
+              className="text-2xl md:text-3xl font-light text-white mb-8 md:mb-12 text-center px-4"
               style={{ fontFamily: '"GFS Didot", serif' }}
             >
               Active Integrations
@@ -152,21 +152,21 @@ export default function EcosystemsPage({ onNavigate: _onNavigate }: EcosystemsPa
             </div>
           </section>
 
-           {/* SECTION 4 – INTEGRATION TECHNOLOGY STACK */}
-           <section className="border-t border-white/10 pt-16">
-             <h2 
-               className="text-3xl font-light text-white mb-6 text-center"
-               style={{ fontFamily: '"GFS Didot", serif' }}
-             >
-               Integration Technology Stack
-             </h2>
-             <p className="text-lg text-white/80 font-light leading-relaxed mb-12 max-w-3xl mx-auto text-center">
-               Zekay is designed to fit naturally into existing development workflows and blockchain environments.
-               The proof and verification layers are implemented through modern tooling and exposed via SDKs and verifier modules, making privacy-preserving identity and reputation accessible to any stack.
-             </p>
+          {/* SECTION 4 – INTEGRATION TECHNOLOGY STACK */}
+          <section className="border-t border-white/10 pt-12 md:pt-16">
+            <h2 
+              className="text-2xl md:text-3xl font-light text-white mb-4 md:mb-6 text-center px-4"
+              style={{ fontFamily: '"GFS Didot", serif' }}
+            >
+              Integration Technology Stack
+            </h2>
+            <p className="text-base md:text-lg text-white/80 font-light leading-relaxed mb-8 md:mb-12 max-w-3xl mx-auto text-center px-4">
+              Zekay is designed to fit naturally into existing development workflows and blockchain environments.
+              The proof and verification layers are implemented through modern tooling and exposed via SDKs and verifier modules, making privacy-preserving identity and reputation accessible to any stack.
+            </p>
 
              {/* Lists */}
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                <div>
                  <h3 className="text-xl font-medium text-white mb-4" style={{ fontFamily: '"GFS Didot", serif' }}>
                    Developer tooling
@@ -193,21 +193,21 @@ export default function EcosystemsPage({ onNavigate: _onNavigate }: EcosystemsPa
            </section>
 
           {/* SECTION 5 – HOW INTEGRATIONS WORK (FLOW / STEPPER) */}
-          <section className="border-t border-white/10 pt-16">
+          <section className="border-t border-white/10 pt-12 md:pt-16">
             <h2 
-              className="text-3xl font-light text-white mb-6 text-center"
+              className="text-2xl md:text-3xl font-light text-white mb-4 md:mb-6 text-center px-4"
               style={{ fontFamily: '"GFS Didot", serif' }}
             >
               How Integrations Work
             </h2>
-            <p className="text-lg text-white/80 font-light leading-relaxed mb-12 max-w-3xl mx-auto text-center">
+            <p className="text-base md:text-lg text-white/80 font-light leading-relaxed mb-8 md:mb-12 max-w-3xl mx-auto text-center px-4">
               Zekay provides a modular identity and attestation layer that can be embedded into any architecture.
               Applications interact with Zekay through the SDK or verifier module, while all sensitive data remains private to the user.
             </p>
 
             {/* Stepper */}
             <div className="relative">
-              <div className="grid grid-cols-1 md:grid-cols-5 gap-6 relative">
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-6 relative">
                 {/* Connector Lines - Hidden on mobile */}
                 <div className="hidden md:block absolute top-8 left-[8%] right-[8%] h-0.5 bg-white/10"></div>
                 
@@ -280,9 +280,9 @@ export default function EcosystemsPage({ onNavigate: _onNavigate }: EcosystemsPa
           </section>
 
           {/* SECTION 6 – INTEGRATION BENEFITS (FEATURE GRID) */}
-          <section className="border-t border-white/10 pt-16">
+          <section className="border-t border-white/10 pt-12 md:pt-16">
             <h2 
-              className="text-3xl font-light text-white mb-12 text-center"
+              className="text-2xl md:text-3xl font-light text-white mb-8 md:mb-12 text-center px-4"
               style={{ fontFamily: '"GFS Didot", serif' }}
             >
               Why Partners Integrate Zekay
@@ -333,22 +333,22 @@ export default function EcosystemsPage({ onNavigate: _onNavigate }: EcosystemsPa
           </section>
 
           {/* SECTION 7 – CALL TO ACTION (PARTNER CONTACT) */}
-          <section className="border-t border-white/10 pt-16 pb-8">
-            <div className="text-center max-w-2xl mx-auto">
+          <section className="border-t border-white/10 pt-12 md:pt-16 pb-8">
+            <div className="text-center max-w-2xl mx-auto px-4">
               <h2 
-                className="text-3xl font-light text-white mb-6"
+                className="text-2xl md:text-3xl font-light text-white mb-4 md:mb-6"
                 style={{ fontFamily: '"GFS Didot", serif' }}
               >
                 Become an Integration Partner
               </h2>
-              <p className="text-lg text-white/80 font-light leading-relaxed mb-8">
+              <p className="text-base md:text-lg text-white/80 font-light leading-relaxed mb-6 md:mb-8">
                 Interested in integrating Zekay into your application, protocol, or enterprise system?
                 Our team works closely with partners to design privacy-preserving identity and reputation flows that fit existing architectures and regulatory requirements.
               </p>
-              <button className="px-8 py-4 bg-white text-black rounded-lg hover:bg-white/90 transition-all font-medium mb-3">
+              <button className="w-full sm:w-auto px-8 py-4 bg-white text-black rounded-lg hover:bg-white/90 transition-all font-medium mb-3">
                 Contact Us
               </button>
-               <p className="text-sm text-white/60 font-light">
+               <p className="text-xs md:text-sm text-white/60 font-light">
                  Email: contact@zekay.io
                </p>
             </div>

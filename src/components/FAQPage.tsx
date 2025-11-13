@@ -7,26 +7,26 @@ interface FAQPageProps {
 export default function FAQPage({ onNavigate: _onNavigate }: FAQPageProps) {
   return (
     <div className="absolute inset-0 overflow-y-auto pointer-events-auto" style={{ overscrollBehavior: 'contain' }}>
-      <div className="max-w-5xl mx-auto px-8 py-20 relative z-10">
+      <div className="max-w-5xl mx-auto px-4 md:px-8 py-12 md:py-20 relative z-10">
         {/* Hero Section */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-20">
           <h1 
-            className="text-6xl font-light italic text-white mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-light italic text-white mb-4 md:mb-6 px-4"
             style={{ fontFamily: '"GFS Didot", serif' }}
           >
             Frequently Asked Questions
           </h1>
-          <p className="text-xl text-white/80 font-light leading-relaxed max-w-4xl mx-auto">
+          <p className="text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-4xl mx-auto px-4">
             Answers to the key questions about Zekay Protocol, its technology, security model, and integration capabilities.
           </p>
         </div>
 
         {/* FAQ Sections */}
-        <div className="space-y-16">
+        <div className="space-y-12 md:space-y-16">
           {/* A. General */}
           <section>
             <h2 
-              className="text-2xl font-light text-white/60 mb-6"
+              className="text-xl md:text-2xl font-light text-white/60 mb-4 md:mb-6"
               style={{ fontFamily: '"GFS Didot", serif' }}
             >
               General
@@ -69,7 +69,7 @@ export default function FAQPage({ onNavigate: _onNavigate }: FAQPageProps) {
           {/* B. Technology */}
           <section>
             <h2 
-              className="text-2xl font-light text-white/60 mb-6"
+              className="text-xl md:text-2xl font-light text-white/60 mb-4 md:mb-6"
               style={{ fontFamily: '"GFS Didot", serif' }}
             >
               Technology
@@ -123,7 +123,7 @@ export default function FAQPage({ onNavigate: _onNavigate }: FAQPageProps) {
           {/* C. Privacy & Security */}
           <section>
             <h2 
-              className="text-2xl font-light text-white/60 mb-6"
+              className="text-xl md:text-2xl font-light text-white/60 mb-4 md:mb-6"
               style={{ fontFamily: '"GFS Didot", serif' }}
             >
               Privacy & Security
@@ -175,7 +175,7 @@ export default function FAQPage({ onNavigate: _onNavigate }: FAQPageProps) {
           {/* D. Integrations & Enterprise */}
           <section>
             <h2 
-              className="text-2xl font-light text-white/60 mb-6"
+              className="text-xl md:text-2xl font-light text-white/60 mb-4 md:mb-6"
               style={{ fontFamily: '"GFS Didot", serif' }}
             >
               Integrations & Enterprise
@@ -227,7 +227,7 @@ export default function FAQPage({ onNavigate: _onNavigate }: FAQPageProps) {
           {/* E. Open Source & Governance */}
           <section>
             <h2 
-              className="text-2xl font-light text-white/60 mb-6"
+              className="text-xl md:text-2xl font-light text-white/60 mb-4 md:mb-6"
               style={{ fontFamily: '"GFS Didot", serif' }}
             >
               Open Source & Governance

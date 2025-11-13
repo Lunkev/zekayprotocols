@@ -2,29 +2,29 @@
 export function ArchitectureContent() {
   return (
     <div className="prose prose-invert max-w-none">
-      <h1 className="text-5xl font-light text-white mb-8" style={{ fontFamily: '"GFS Didot", serif' }}>Architecture Overview</h1>
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-6 md:mb-8" style={{ fontFamily: '"GFS Didot", serif' }}>Architecture Overview</h1>
       
-      <p className="text-xl text-white/90 font-light leading-relaxed mb-12">
+      <p className="text-lg md:text-xl text-white/90 font-light leading-relaxed mb-8 md:mb-12">
         Zekay Protocol is built as a layered system, where each layer performs a specific cryptographic function yet remains interoperable. Together, they form a unified framework for private reputation and identity.
       </p>
 
-      <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-xl p-8 mb-12">
-        <h2 className="text-2xl font-medium text-white mb-4" style={{ fontFamily: '"GFS Didot", serif' }}>System Overview</h2>
+      <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-xl p-6 md:p-8 mb-8 md:mb-12">
+        <h2 className="text-xl md:text-2xl font-medium text-white mb-3 md:mb-4" style={{ fontFamily: '"GFS Didot", serif' }}>System Overview</h2>
         <p className="text-white/80 font-light leading-relaxed">
           The architecture follows a strict separation of concerns, ensuring each layer can operate independently while maintaining cryptographic consistency. This design allows for parallel development, modular upgrades, and flexible deployment across different blockchain networks.
         </p>
       </div>
 
-      <h2 className="text-3xl font-light text-white mt-12 mb-6" style={{ fontFamily: '"GFS Didot", serif' }}>The Four Layers</h2>
+      <h2 className="text-2xl md:text-3xl font-light text-white mt-8 md:mt-12 mb-4 md:mb-6" style={{ fontFamily: '"GFS Didot", serif' }}>The Four Layers</h2>
       
-      <div className="space-y-6 mb-12">
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="bg-white/10 rounded-lg p-3">
-              <i className="ri-user-line text-3xl text-white"></i>
+      <div className="space-y-4 md:space-y-6 mb-8 md:mb-12">
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 md:p-8">
+          <div className="flex items-center gap-3 mb-3 md:mb-4">
+            <div className="bg-white/10 rounded-lg p-2 md:p-3">
+              <i className="ri-user-line text-2xl md:text-3xl text-white"></i>
             </div>
             <div>
-              <h3 className="text-2xl font-medium text-white" style={{ fontFamily: '"GFS Didot", serif' }}>Layer 1: Identity</h3>
+              <h3 className="text-xl md:text-2xl font-medium text-white" style={{ fontFamily: '"GFS Didot", serif' }}>Layer 1: Identity</h3>
               <p className="text-white/60 text-sm">Anonymous Cryptographic Commitments</p>
             </div>
           </div>
@@ -38,13 +38,13 @@ export function ArchitectureContent() {
           </div>
         </div>
 
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="bg-white/10 rounded-lg p-3">
-              <i className="ri-file-shield-line text-3xl text-white"></i>
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 md:p-8">
+          <div className="flex items-center gap-3 mb-3 md:mb-4">
+            <div className="bg-white/10 rounded-lg p-2 md:p-3">
+              <i className="ri-file-shield-line text-2xl md:text-3xl text-white"></i>
             </div>
             <div>
-              <h3 className="text-2xl font-medium text-white" style={{ fontFamily: '"GFS Didot", serif' }}>Layer 2: Attestation</h3>
+              <h3 className="text-xl md:text-2xl font-medium text-white" style={{ fontFamily: '"GFS Didot", serif' }}>Layer 2: Attestation</h3>
               <p className="text-white/60 text-sm">Encrypted Reputation Issuance</p>
             </div>
           </div>
@@ -63,13 +63,13 @@ export function ArchitectureContent() {
           </div>
         </div>
 
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="bg-white/10 rounded-lg p-3">
-              <i className="ri-shield-check-line text-3xl text-white"></i>
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 md:p-8">
+          <div className="flex items-center gap-3 mb-3 md:mb-4">
+            <div className="bg-white/10 rounded-lg p-2 md:p-3">
+              <i className="ri-shield-check-line text-2xl md:text-3xl text-white"></i>
             </div>
             <div>
-              <h3 className="text-2xl font-medium text-white" style={{ fontFamily: '"GFS Didot", serif' }}>Layer 3: Proof Generation</h3>
+              <h3 className="text-xl md:text-2xl font-medium text-white" style={{ fontFamily: '"GFS Didot", serif' }}>Layer 3: Proof Generation</h3>
               <p className="text-white/60 text-sm">Zero-Knowledge Proof System</p>
             </div>
           </div>
@@ -86,13 +86,13 @@ export function ArchitectureContent() {
           </div>
         </div>
 
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="bg-white/10 rounded-lg p-3">
-              <i className="ri-checkbox-circle-line text-3xl text-white"></i>
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 md:p-8">
+          <div className="flex items-center gap-3 mb-3 md:mb-4">
+            <div className="bg-white/10 rounded-lg p-2 md:p-3">
+              <i className="ri-checkbox-circle-line text-2xl md:text-3xl text-white"></i>
             </div>
             <div>
-              <h3 className="text-2xl font-medium text-white" style={{ fontFamily: '"GFS Didot", serif' }}>Layer 4: Verification</h3>
+              <h3 className="text-xl md:text-2xl font-medium text-white" style={{ fontFamily: '"GFS Didot", serif' }}>Layer 4: Verification</h3>
               <p className="text-white/60 text-sm">On-Chain and Off-Chain Validation</p>
             </div>
           </div>
@@ -112,8 +112,8 @@ export function ArchitectureContent() {
         </div>
       </div>
 
-      <h2 className="text-3xl font-light text-white mt-12 mb-6" style={{ fontFamily: '"GFS Didot", serif' }}>Data Flow</h2>
-      <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-xl p-8 mb-8">
+      <h2 className="text-2xl md:text-3xl font-light text-white mt-8 md:mt-12 mb-4 md:mb-6" style={{ fontFamily: '"GFS Didot", serif' }}>Data Flow</h2>
+      <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-xl p-6 md:p-8 mb-6 md:mb-8">
         <ol className="space-y-5 text-white/80">
           <li className="flex gap-4">
             <span className="flex-shrink-0 w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center font-semibold">1</span>
@@ -151,8 +151,8 @@ export function ArchitectureContent() {
         </div>
       </div>
 
-      <h2 className="text-3xl font-light text-white mt-12 mb-6" style={{ fontFamily: '"GFS Didot", serif' }}>Technical Stack</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+      <h2 className="text-2xl md:text-3xl font-light text-white mt-8 md:mt-12 mb-4 md:mb-6" style={{ fontFamily: '"GFS Didot", serif' }}>Technical Stack</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
           <h3 className="text-white font-medium mb-3 flex items-center gap-2" style={{ fontFamily: '"GFS Didot", serif' }}>
             <i className="ri-code-s-slash-line text-xl"></i>
