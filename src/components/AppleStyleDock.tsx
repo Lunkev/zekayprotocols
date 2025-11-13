@@ -1,15 +1,7 @@
-import {
-  HomeIcon,
-  Info,
-  BookOpen,
-  HelpCircle,
-  SunMoon,
-} from 'lucide-react';
-
 import { Dock, DockIcon, DockItem, DockLabel } from '@/components/ui/dock';
 
 interface AppleStyleDockProps {
-  onNavigate: (page: 'main' | 'about' | 'docs') => void;
+  onNavigate: (page: 'main' | 'about' | 'docs' | 'faq' | 'ecosystems') => void;
 }
 
 export function AppleStyleDock({ onNavigate }: AppleStyleDockProps) {
@@ -17,44 +9,51 @@ export function AppleStyleDock({ onNavigate }: AppleStyleDockProps) {
     {
       title: 'Home',
       icon: (
-        <HomeIcon className='h-full w-full text-white' />
+        <i className="ri-home-line text-white text-xl"></i>
       ),
       onClick: () => onNavigate('main'),
     },
     {
       title: 'About',
       icon: (
-        <Info className='h-full w-full text-white' />
+        <i className="ri-information-line text-white text-xl"></i>
       ),
       onClick: () => onNavigate('about'),
     },
     {
       title: 'Docs',
       icon: (
-        <BookOpen className='h-full w-full text-white' />
+        <i className="ri-book-open-line text-white text-xl"></i>
       ),
       onClick: () => onNavigate('docs'),
     },
     {
       title: 'FAQ',
       icon: (
-        <HelpCircle className='h-full w-full text-white' />
+        <i className="ri-question-line text-white text-xl"></i>
       ),
-      onClick: () => {},
+      onClick: () => onNavigate('faq'),
+    },
+    {
+      title: 'Ecosystems',
+      icon: (
+        <i className="ri-global-line text-white text-xl"></i>
+      ),
+      onClick: () => onNavigate('ecosystems'),
+    },
+    {
+      title: 'GitHub',
+      icon: (
+        <i className="ri-github-fill text-white text-xl"></i>
+      ),
+      onClick: () => window.open('https://github.com', '_blank'),
     },
     {
       title: 'X',
       icon: (
         <img src='https://i.postimg.cc/VNfrcJWL/X-vit.png' alt='X' className='h-full w-full object-contain' />
       ),
-      onClick: () => {},
-    },
-    {
-      title: 'Theme',
-      icon: (
-        <SunMoon className='h-full w-full text-white' />
-      ),
-      onClick: () => {},
+      onClick: () => window.open('https://x.com/zekayprotocol', '_blank'),
     },
   ];
 

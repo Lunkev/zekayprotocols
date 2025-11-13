@@ -138,3 +138,28 @@ button:focus-visible {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes shimmer {
+  0% {
+    background-position: -150% center;
+  }
+  100% {
+    background-position: 150% center;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.5) 30%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0.5) 70%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  background-size: 50% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 12s linear infinite;
+}
